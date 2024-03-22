@@ -1,0 +1,120 @@
+/* Reset styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fff; /* White */
+  color: #000; /* Black */
+}
+
+/* Navbar styles */
+nav {
+  background-color: #000; /* Black */
+  color: #fff;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+.logo img {
+  width: 30px; /* Adjust size as needed */
+  height: auto;
+  margin-right: 10px;
+}
+
+.nav-links {
+  list-style-type: none;
+}
+
+.nav-links li {
+  display: inline;
+  margin-right: 20px;
+}
+
+.nav-links li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Header styles */
+header {
+  background-color: #000; /* Black */
+  color: #fff;
+  text-align: center;
+  padding: 100px 0;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1.5rem;
+  margin-bottom: 40px;
+}
+
+.btn {
+  padding: 10px 20px;
+  background-color: #007bff; /* Blue */
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.btn:hover {
+  background-color: #0056b3; /* Darker blue */
+}
+
+/* Features section styles */
+.features {
+  padding: 50px 0;
+}
+
+.features h2 {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.feature-item {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.feature-item img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.feature-item h3 {
+  margin-top: 20px;
+}
+
+/* Footer styles */
+footer {
+  background-color: #000; /* Black */
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.container p {
+  font-size: 0.8rem;
+}
+
