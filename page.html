@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>iPhone 16 Landing Page</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap">
+
 </head>
 <body>
     <nav>
@@ -17,8 +19,8 @@
                
                 <li><a href="#features">Features</a></li> <!-- Link to features section -->
                 <li><a href="#specifications">Specifications</a></li> <!-- Link to specifications section -->
-                <li><a href="#">Pricing</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
     </nav>
@@ -34,7 +36,7 @@
 
     <section class="features" id="features"> <!-- Features section -->
         <div class="container">
-            <h2>New Features</h2>
+            <h2 class="section-heading">New Features</h2>
             <div class="feature-item">
                 <img src="newd.png" alt="Feature 1">
                 <h3>Revolutionary Design</h3>
@@ -61,7 +63,7 @@
 
     <section class="specifications" id="specifications"> <!-- Specifications section -->
         <div class="container">
-            <h2>Specifications</h2>
+            <h2 class="section-heading">Specifications</h2>
             <div class="spec-item">
                 <img src="Proccesor.png" alt="Processor">
                 <h3>Processor</h3>
@@ -88,6 +90,58 @@
         </div>
     </section>
 
+    <section class="pricing" id="pricing"> <!-- Pricing section -->
+        <div class="container">
+            <h2 class="section-heading">Pricing</h2>
+            <div class="pricing-table">
+                <div class="pricing-item">
+                    <img src="price 1.png" alt="iPhone 16">
+                    <h3>iPhone 16</h3>
+                    <ul>
+                        <li>Base Model (64GB): $999</li>
+                        <li>256GB: $1,199</li>
+                        <li>512GB: $1,399</li>
+                    </ul>
+                </div>
+                <div class="pricing-item">
+                    <img src="price2.png" alt="iPhone 16 Plus">
+                    <h3>iPhone 16 Plus</h3>
+                    <ul>
+                        <li>Base Model (64GB): $1,099</li>
+                        <li>256GB: $1,299</li>
+                        <li>512GB: $1,499</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact"> <!-- Contact section -->
+        <div class="container">
+            <h2 class="section-heading">Contact Us</h2>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <h3>Customer Care Number</h3>
+                    <p>+1 (800) 123-4567</p>
+                </div>
+                <div class="contact-item">
+                    <h3>Email</h3>
+                    <p>support@iphone16.com</p>
+                </div>
+            </div>
+            <div class="contact-form">
+                <h3>Send us a message</h3>
+                <form action="#" method="POST">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="message" placeholder="Your Message" required></textarea>
+                    <button type="submit">Send</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    
+
     <footer>
         <div class="container">
             <p>&copy; 2024 iPhone 16. All rights reserved.</p>
@@ -95,3 +149,6 @@
     </footer>
 </body>
 </html>
+
+
+
