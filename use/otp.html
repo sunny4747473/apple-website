@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OTP Verification</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation bar -->
+    <nav>
+        <div class="container">
+            <img src="apple.png" alt="Apple Logo" class="apple-logo">
+            <ul class="nav-links">
+                <li><a href="https://www.apple.com/">Home</a></li>
+                <li><a href="https://www.apple.com/in/shop/accessories/all">Products</a></li>
+                <li><a href="https://www.apple.com/leadership/">About</a></li>
+                <li><a href="https://www.apple.com/in/contact/">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- OTP Verification form -->
+    <div class="container">
+        <h1>OTP Verification</h1>
+        <p>An OTP (One-Time Password) has been sent to your registered mobile number or email address. Please enter the OTP below to complete the verification process.</p>
+        <div class="otp-form">
+            <form id="otpForm" method="POST">
+                <div class="form-group">
+                    <label for="otp">Enter OTP:</label>
+                    <input type="text" id="otp" name="otp" maxlength="6" pattern="\d{6}" title="Please enter a 6-digit OTP" required>
+                </div>
+                <div class="form-group">
+                    <input type="submit" value="Verify OTP">
+                </div>
+            </form>
+        </div>
+        <!-- Link to payment page -->
+        <p>Don't have an OTP? <a href="payment.html">Go back to payment page</a></p>
+    </div>
+
+    <script>
+        document.getElementById("otpForm").addEventListener("submit", function(event) {
+            event.preventDefault(); // Prevent form submission
+
+            var otpInput = document.getElementById("otp").value;
+            if (otpInput.length !== 6 || isNaN(otpInput)) {
+                alert("Please enter a valid 6-digit OTP.");
+            } else {
+                window.location.href = "confirmation.html"; // Redirect to confirmation page
+            }
+        });
+    </script>
+</body>
+</html>
+
